@@ -1,0 +1,25 @@
+#container-button {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0px;
+
+    #button {
+        padding: 20px 60px;
+        border-radius: 30px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        background-image: linear-gradient(to bottom, rgb(180, 3, 180), rgb(161, 1, 161), purple);
+        border: rgb(158, 29, 158);
+        font-size: 1em;
+        cursor: pointer;
+
+        &:hover {
+            background-image: linear-gradient(to bottom, purple, rgb(161, 1, 161),rgb(180, 3, 180) );
+        }
+
+        &:active {
+            position: relative;
+            top: 2px;
+        }
+    }
+}

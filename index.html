@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Criação de um formulário interativo com SASS e JavaScript">
+    <meta name="author" content="Murilo Araújo">
+    <meta name="keywords" content="formulário, interatividade, JavaScript, SASS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário interativo</title>
+    <link rel="stylesheet" href="SASS/import.css">
+    <script src="JS/Script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <form action="">
+            <div id="header">
+                <hr>
+                    <div class="login">
+                        <img src="SVG/google.png" alt="incone do google" class="svg">
+                        <img src="SVG/facebook.png" alt="icon de facebook" class="svg">
+                        <img src="SVG/github.png" alt="icone do github" class="svg" id="git">
+                    </div>
+                <hr>
+            </div>
+            <div id="main">
+                <input type="text" name="nome" id="name" class="input" placeholder="Nome...">
+                <input type="password" name="senha" id="password" class="input" placeholder="Senha...">
+            </div>
+            <div id="footer">
+                <div id="idade">
+                    <select name="idade" id="years" required>
+                        <option value="---" selected disabled>---</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                    </select>
+                </div>
+                <div id="gen">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sex" id="masc">
+                    <label for="femi">Feminino</label>
+                    <input type="radio" name="sex" id="femi">
+                </div>
+            </div>
+            <!-- estilos do "eula" se encontra no arquivo _footer.scss-->
+            <div id="eula"> 
+                <input type="checkbox" name="termo" id="termo">
+                <label for="termo"><a href="https://br.freepik.com/psd-gratuitas/fundo-de-jogador-com-acessorios_16329823.htm#query=Gamer&position=0&from_view=search&track=sph">Imagem de Kerfin7</a> no Freepik</label>
+            </div>
+            <div id="container-button">
+                <button id="button">
+                    Confirmar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

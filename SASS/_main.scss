@@ -1,0 +1,19 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1.25em; // 5px 
+    font-family: $font;
+    margin: 7% 0px 4% 0px;
+
+    .input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid gray;
+        padding: 0.62em; // 10px
+        color: white;
+        &::placeholder {
+            font-size: 1.25em;
+        }
+    }
+}

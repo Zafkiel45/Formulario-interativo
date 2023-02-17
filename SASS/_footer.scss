@@ -1,0 +1,49 @@
+#footer {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    font-family: $font;
+    accent-color: rgb(65, 4, 109);
+    margin: 5% 0px;
+
+    #gen {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #years {
+        background-color: rgb(62, 11, 98);
+        border: none;
+        border-radius: 1.25em; //20px
+        padding: 0.31em; // 5px 
+        color: white;
+        width: 50px;
+        //Melhorar design
+    }
+}
+
+#eula {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: $font;
+    accent-color: rgb(62, 11, 98);
+    margin: 4% 0px;
+
+    a {
+        text-decoration: none;
+        &:link {
+            color:rgb(62, 11, 98);
+        }
+
+        &:hover {
+            text-decoration: underline;
+        } 
+
+        &:visited {
+            color: pink;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(235,102,214);
+    background: linear-gradient(34deg, rgb(123, 53, 113) 0%, rgb(30, 11, 98) 100%);
+    width: fit-content;
+    padding: 2em;
+    margin: 10% 5%;
+    border-radius: 1.25em;
+}
