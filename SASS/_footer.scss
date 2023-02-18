@@ -21,6 +21,20 @@
         width: 50px;
         //Melhorar design
     }
+
+    @include responsive(small) {
+
+        #gen {
+            font-size: 0.9em;
+            gap: 5px;
+            margin: 6% 0px;
+        }
+
+        #idade {
+            display: flex;
+            align-items: center;
+        }
+    }
 }
 
 #eula {
@@ -44,6 +58,29 @@
 
         &:visited {
             color: pink;
+        }
+    }
+
+    #termo {
+        width: 18px;
+        height: 18px;
+
+        &:checked + label{
+            color: rgb(251, 87, 202);
+        }
+
+        &:active {
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    @include responsive(small) {
+        font-size: 0.9em;
+        
+        #termo {
+            width: 15px;
+            height: 15px;
         }
     }
 }

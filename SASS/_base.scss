@@ -7,4 +7,10 @@
     padding: 2em;
     margin: 10% 5%;
     border-radius: 1.25em;
+
+    @include responsive(small) {
+        padding: 2em;
+        height: fit-content;
+        width: 350px;
+    }
 }

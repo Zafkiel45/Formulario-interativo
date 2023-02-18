@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="container">
-        <form action="">
+        <form action="" id="form">
             <div id="header">
                 <hr>
                     <div class="login">
@@ -24,10 +24,14 @@
                 <hr>
             </div>
             <div id="main">
-                <input type="text" name="nome" id="name" class="input" placeholder="Nome...">
-                <input type="password" name="senha" id="password" class="input" placeholder="Senha...">
+                <!-- INPUTS -->
+                <input type="text" name="nome" id="name" class="input campos" placeholder="Nome..." oninput="CheckName()" maxlength="20" minlength="3" required>
+                <span class="error">* O nome deve conter mais de 3 caracteres</span>
+                <input type="password" name="senha" id="password" class="input campos" placeholder="Senha..." maxlength="30" required>
+                <span class="error">* Senha deve conter 8 caracteres</span>
             </div>
             <div id="footer">
+                <!-- INFORMAÇÕES ADICIONAIS -->
                 <div id="idade">
                     <select name="idade" id="years" required>
                         <option value="---" selected disabled>---</option>
@@ -40,9 +44,11 @@
                 </div>
                 <div id="gen">
                     <label for="masc">Masculino</label>
-                    <input type="radio" name="sex" id="masc">
+                    <input type="radio" name="sex" id="masc" checked>
                     <label for="femi">Feminino</label>
                     <input type="radio" name="sex" id="femi">
+                    <label for="outro">Outro</label>
+                    <input type="radio" name="sex" id="other">
                 </div>
             </div>
             <!-- estilos do "eula" se encontra no arquivo _footer.scss-->
@@ -51,7 +57,7 @@
                 <label for="termo"><a href="https://br.freepik.com/psd-gratuitas/fundo-de-jogador-com-acessorios_16329823.htm#query=Gamer&position=0&from_view=search&track=sph">Imagem de Kerfin7</a> no Freepik</label>
             </div>
             <div id="container-button">
-                <button id="button">
+                <button id="button" type="submit">
                     Confirmar
                 </button>
             </div>

@@ -12,8 +12,19 @@
         border-bottom: 1px solid gray;
         padding: 0.62em; // 10px
         color: white;
+        outline: none;
+        appearance: none;
         &::placeholder {
             font-size: 1.25em;
         }
+
+        &:focus {
+            border-color: rgb(242, 83, 242);
+        }
+    }
+    .error {
+        display: none;
+        color: rgb(176, 55, 55);
+        font-size: small;
     }
 }

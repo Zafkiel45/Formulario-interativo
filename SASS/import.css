@@ -12,6 +12,13 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+  }
+}
 #footer {
   display: flex;
   justify-content: space-between;
@@ -32,6 +39,17 @@ body {
   padding: 0.31em;
   color: white;
   width: 50px;
+}
+@media (max-width: 425px) {
+  #footer #gen {
+    font-size: 0.9em;
+    gap: 5px;
+    margin: 6% 0px;
+  }
+  #footer #idade {
+    display: flex;
+    align-items: center;
+  }
 }
 
 #eula {
@@ -55,6 +73,26 @@ body {
 #eula a:visited {
   color: pink;
 }
+#eula #termo {
+  width: 18px;
+  height: 18px;
+}
+#eula #termo:checked + label {
+  color: rgb(251, 87, 202);
+}
+#eula #termo:active {
+  position: relative;
+  top: 2px;
+}
+@media (max-width: 425px) {
+  #eula {
+    font-size: 0.9em;
+  }
+  #eula #termo {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 #container {
   display: flex;
@@ -67,6 +105,15 @@ body {
   padding: 2em;
   margin: 10% 5%;
   border-radius: 1.25em;
+}
+@media (max-width: 425px) {
+  #container {
+    padding: 2em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 350px;
+  }
 }
 
 #main {
@@ -83,6 +130,10 @@ body {
   border-bottom: 1px solid gray;
   padding: 0.62em;
   color: white;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 #main .input::-moz-placeholder {
   font-size: 1.25em;
@@ -92,6 +143,14 @@ body {
 }
 #main .input::placeholder {
   font-size: 1.25em;
+}
+#main .input:focus {
+  border-color: rgb(242, 83, 242);
+}
+#main .error {
+  display: none;
+  color: rgb(176, 55, 55);
+  font-size: small;
 }
 
 #header {
@@ -113,6 +172,15 @@ body {
   position: relative;
   bottom: 2px;
   transform: scale(1.1);
+}
+@media (max-width: 425px) {
+  #header .svg {
+    width: 35px;
+    height: 35px;
+  }
+  #header hr {
+    width: 70px;
+  }
 }
 
 #container-button {

@@ -13,7 +13,36 @@ body {
 }
 
 $font: arial, helvetica, sans-serif;
+//=============================================================================================
+//responsividade
 
+$medium: 768px;
+$small: 425px;
+$minion: 375px;
+
+@mixin responsive($break) {
+    @if $break == medium {
+        @media (max-width: $medium) {
+            @content;
+        }
+    } @else if $break == small {
+        @media (max-width: $small) {
+            @content;
+        }
+    } @else {
+        @media (max-width: $minion) {
+            @content; 
+        }
+    }
+}
+
+@include responsive(medium) {
+    body {
+        justify-content: center;
+        background-size: cover;
+        height: 100vh;
+    }
+}
 
 //=============================================================================================
 
