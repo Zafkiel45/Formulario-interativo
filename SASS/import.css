@@ -105,10 +105,13 @@ body {
   padding: 2em;
   margin: 10% 5%;
   border-radius: 1.25em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 425px) {
   #container {
-    padding: 2em;
+    padding: 1.5em;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

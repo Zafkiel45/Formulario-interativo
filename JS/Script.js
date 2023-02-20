@@ -68,4 +68,6 @@ button.addEventListener('click', function() {
     } else if(campos[1].value.length == 0) {
         window.alert('Verifique a sua senha e tente novamente')
     }
+
+    form.reset() //Limpa os campos do formulário.
 })
