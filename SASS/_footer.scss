@@ -10,6 +10,12 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        outline: none;
+    }
+
+    #idade {
+        display: flex;
+        gap: 10px;
     }
 
     #years {
@@ -19,6 +25,7 @@
         padding: 0.31em; // 5px 
         color: white;
         width: 50px;
+        outline: none;
         //Melhorar design
     }
 
@@ -26,12 +33,11 @@
 
         #gen {
             font-size: 0.9em;
-            gap: 5px;
+            gap: 3px;
             margin: 6% 0px;
         }
 
         #idade {
-            display: flex;
             align-items: center;
         }
     }

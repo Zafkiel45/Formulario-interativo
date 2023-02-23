@@ -33,6 +33,14 @@
             <div id="footer">
                 <!-- INFORMAÇÕES ADICIONAIS -->
                 <div id="idade">
+                    <div id="gen">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="sex" id="masc" checked>
+                        <label for="femi">Feminino</label>
+                        <input type="radio" name="sex" id="femi">
+                        <label for="outro">Outro</label>
+                        <input type="radio" name="sex" id="other">
+                    </div>
                     <select name="idade" id="years" required>
                         <option value="---" selected disabled>---</option>
                         <option value="10">10</option>
@@ -41,14 +49,6 @@
                         <option value="16">16</option>
                         <option value="18">18</option>
                     </select>
-                </div>
-                <div id="gen">
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="sex" id="masc" checked>
-                    <label for="femi">Feminino</label>
-                    <input type="radio" name="sex" id="femi">
-                    <label for="outro">Outro</label>
-                    <input type="radio" name="sex" id="other">
                 </div>
             </div>
             <!-- estilos do "eula" se encontra no arquivo _footer.scss-->
